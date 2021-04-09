@@ -1,0 +1,9 @@
+name: Transferserver
+main: Pandaa\Transfercommand\Transferserver
+author: JusztPandaa
+version: 2.0
+api: 3.0.0
+
+commands:
+  transferserver:
+    description: "transfer to another server"
