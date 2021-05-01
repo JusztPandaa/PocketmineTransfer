@@ -11,7 +11,10 @@ use pocketmine\command\{Command,CommandSender};
 class Transferserver extends PluginBase implements Listener {
 
     public function onEnable() {
-
+       $cmd = $this->getServer()->getCommandMap();
+       if($cmd !== null){
+       $cmd->unregister("transferserver");
+       }
        $this->getServer()->getPluginManager()->registerEvent($this, $this);
     }
 
